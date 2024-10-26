@@ -1,0 +1,61 @@
+* {
+    font-family: "SUSE", sans-serif;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 64px;
+    color: #1d3557;
+}
+
+nav a {
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 25px;
+    font-size: 28px;
+    color: black;
+    transition: 0.5s all;
+}
+
+nav a:hover {
+    color: #1d3557;
+    font-weight: bold;
+}
+thead tr {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+thead th {
+    padding: 15px;
+}
+
+tbody tr {
+    color: #1d3557;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(3n+1) {
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+tbody tr:nth-child(3n+2) {
+    background-color: #a8dadc;
+}
+
+tbody tr:nth-child(3n) {
+    background-color: #f1faee;
+}
+
+
+tbody td {
+    padding: 10px;
+}

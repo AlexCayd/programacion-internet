@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio MT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+
+    <div class="agregar">
+        <h3 class="instrucciones">Agregar mis tareas</h3>
+        <input type="text" id="input__tarea" placeholder="Nombre de mi tarea...">
+        <button id="agregartarea" onclick="agregartarea()">Agregar</button>
+    </div>
+
+    <div id="alertas"></div>
+    
+    <div class="tareas">
+        <table class="todo">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Completado</th>
+                </tr>
+            </thead>
+            <tbody id="resultados"></tbody>
+        </table>
+    </div>
+
+    <div class="borrar">
+        <button id="borrartodo" onclick="borrarTodo()">Borrar todo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

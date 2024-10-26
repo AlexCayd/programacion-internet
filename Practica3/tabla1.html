@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "SUSE", sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 64px;
+        }
+
+        a {
+            text-decoration: none;
+            margin-top: 20px;
+            padding: 25px;
+            font-size: 28px;
+            color: black;
+            transition: 0.5s all;
+        }
+
+        a:hover {
+            color: #1d3557;
+            font-weight: bold;
+        }
+
+        thead tr {
+            background-color: #1d3557;
+            color: #f1faee;
+        }
+
+        thead th {
+            padding: 15px;
+        }
+
+        tbody tr {
+            color: #1d3557;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(1), 
+        tbody tr:nth-child(4),
+        tbody tr:nth-child(7), 
+        tbody tr:nth-child(10) {
+            background-color: #457b9d;
+            color: #f1faee;
+        }
+
+        tbody tr:nth-child(2), 
+        tbody tr:nth-child(5),
+        tbody tr:nth-child(8){
+            background-color: #a8dadc;
+        }
+
+        tbody tr:nth-child(3), 
+        tbody tr:nth-child(6),
+        tbody tr:nth-child(9) {
+            background-color: #f1faee;
+        }
+
+        tbody td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Conciertos</h1>
+        <table>
+            <thead class="encabezado__">
+                <tr>
+                    <th>Artista</th>
+                    <th>Fecha</th>
+                    <th>Venue</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Coldplay</td>
+                    <td>12 de Septiembre</td>
+                    <td>Estadio Nacional</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Ed Sheeran</td>
+                    <td>25 de Octubre</td>
+                    <td>Auditorio Telmex</td>
+                    <td>$120</td>
+                </tr>
+                <tr>
+                    <td>Beyoncé</td>
+                    <td>3 de Noviembre</td>
+                    <td>Foro Sol</td>
+                    <td>$180</td>
+                </tr>
+                <tr>
+                    <td>The Weeknd</td>
+                    <td>15 de Noviembre</td>
+                    <td>Palacio de los Deportes</td>
+                    <td>$160</td>
+                </tr>
+                <tr>
+                    <td>Billie Eilish</td>
+                    <td>20 de Noviembre</td>
+                    <td>Auditorio Nacional</td>
+                    <td>$140</td>
+                </tr>
+                <tr>
+                    <td>Dua Lipa</td>
+                    <td>5 de Diciembre</td>
+                    <td>Estadio Azteca</td>
+                    <td>$170</td>
+                </tr>
+                <tr>
+                    <td>Harry Styles</td>
+                    <td>10 de Diciembre</td>
+                    <td>Arena Ciudad de México</td>
+                    <td>$130</td>
+                </tr>
+                <tr>
+                    <td>Bruno Mars</td>
+                    <td>15 de Diciembre</td>
+                    <td>Foro Sol</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Imagine Dragons</td>
+                    <td>20 de Diciembre</td>
+                    <td>Auditorio Nacional</td>
+                    <td>$110</td>
+                </tr>
+                <tr>
+                    <td>Shawn Mendes</td>
+                    <td>30 de Diciembre</td>
+                    <td>Palacio de los Deportes</td>
+                    <td>$125</td>
+                </tr>
+            </tbody>
+        </table>    
+    
+        <a href="index.html">Regresar</a>
+    </div>
+</body>
+</html>

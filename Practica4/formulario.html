@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "SUSE", sans-serif;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #1d3557;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-top: 50px;
+            padding: 25px;
+            font-size: 28px;
+            color: black;
+            transition: 0.5s all;
+        }
+
+        nav a:hover {
+            color: #1d3557;
+            font-weight: bold;
+        }
+        
+        input {
+            padding: 15px 20px;
+        }
+
+        #evaluar {
+            margin-top: 25px;
+            padding: 10px 50px;
+            background-color: #1d3557;
+            color: #fff;
+            transition: 0.5s all;
+            border: 2px solid #1d3557;
+        }
+
+        #evaluar:hover {
+            cursor: pointer;
+            color: #1d3557;
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .radio {
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <a href="index.html">
+            <h1>Formulario</h1>
+        </a>
+        <form>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+
+            <br>
+
+            <label for="email">Correo electrónico: </label>
+            <input type="email" id="email">
+
+            <br>
+
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad">
+
+            <br>
+            
+            <label for="genero">Género: </label>
+
+            <br>
+            <div class="radio">
+                <input class="genero" name="genero" type="radio" value="Masculino"> <p>Masculino</p>
+            </div>
+            <div class="radio">
+                <input class="genero" name="genero" type="radio" value="Femenino"> <p>Femenino</p>
+            </div>
+            <div class="radio">
+                <input class="genero" name="genero" type="radio" value="Prefiere no decir"> <p>Prefiero no decir</p>
+            </div>
+
+            <br>
+            <label for="nacimiento">Fecha de nacimiento: </label>
+            <input type="date" id="nacimiento">
+
+            <br>
+            <label for="color">Color favorito: </label>
+            <input type="color" id="color">
+        </form>
+        <h3 id="evaluar" onclick="resumir()">Resumir</h3>
+        <p id="equivalencia">Resumen: <span id="resumen"></span> </p>
+    </div>
+
+    <script src="formulario.js"></script>
+    
+</body>
+</html>

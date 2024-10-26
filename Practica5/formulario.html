@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Inscríbete al Torneo de Ajedrez Humano</h1>
+
+        <form>
+            <label for="nombre">Tu nombre</label>
+            <input type="text" name="nombre" id="nombre"> <br> <br>
+
+            <label for="email">Tu correo electrónico</label>
+            <input type="email" name="email" id="email"> <br> <br>
+
+            <label for="asistencia">Días que podrías asistir</label><br>
+            <input type="checkbox" id="miercoles" name="asistencia" value="Miercoles">
+            <label for="deporte">Miércoles</label><br>
+
+            <input type="checkbox" id="miercoles" name="asistencia" value="Jueves">
+            <label for="musica">Jueves</label><br>
+
+            <input type="checkbox" id="Viernes" name="asistencia" value="Viernes">
+            <label for="cine">Viernes</label><br> <br>
+
+            <label for="campus">Campus al que podrías asistir</label>
+            <p>Norte</p><input name="campus" type="radio" value="Norte"> 
+            <p>Sur</p><input name="campus" type="radio" value="Sur"> 
+            <p>Ambos</p><input name="campus" type="radio" value="Ambos"> <br> <br>
+        
+            <label for="disponibilidad">Punto en el espacio-tiempo desde el que estás disponible</label>
+            <input type="datetime-local" id="disponibilidad" name="disponibilidad"> <br> <br>
+
+            <label for="color">Equipo al que quieres inscribirte</label>
+            <input type="color" name="color" id="color"> <br> <br>
+
+            <label for="experiencia">¿Qué tan alta es tu experiencia en ajedrez?</label>
+            <input type="range" min="1" max="5" value="2.5" id="experiencia"> <br> <br>
+
+            <div id="alertas"></div>
+        </form> 
+        <button onclick="submit()">Enviar</button> <br> <br> <br>
+
+        <table class="resultados">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Asistencia</th>
+                <th>Campus</th>
+                <th>Disponibilidad</th>
+                <th>Equipo</th>
+                <th>Experiencia</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+          </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

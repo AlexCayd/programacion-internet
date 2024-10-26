@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "SUSE", sans-serif;
+        }
+
+        .contenedor {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #1d3557;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-top: 50px;
+            padding: 25px;
+            font-size: 28px;
+            color: black;
+            transition: 0.5s all;
+        }
+
+        nav a:hover {
+            color: #1d3557;
+            font-weight: bold;
+        }
+        
+        input {
+            padding: 15px 20px;
+        }
+
+        #evaluar {
+            margin-top: 25px;
+            padding: 10px 50px;
+            background-color: #1d3557;
+            color: #fff;
+            transition: 0.5s all;
+            border: 2px solid #1d3557;
+        }
+
+        #evaluar:hover {
+            cursor: pointer;
+            color: #1d3557;
+            background-color: #fff;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <a href="index.html">
+            <h1>Calificaciones</h1>
+        </a>
+        <form>
+            <input type="number" placeholder="Calificación (1-10)..." id="inputresultado">
+        </form>
+        <h3 id="evaluar" onclick="evaluar()">Evaluar</h3>
+        <p id="equivalencia">Equivalencia: <span id="resultado"></span> </p>
+    </div>
+
+    <script src="calificaciones.js"></script>
+</body>
+</html>
