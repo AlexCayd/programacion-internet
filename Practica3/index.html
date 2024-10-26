@@ -40,6 +40,36 @@
             color: #1d3557;
             font-weight: bold;
         }
+
+        :root {
+            --azulMarino: #1d3557;
+            --blanco: #f1faee;
+        }
+        
+        .contenedor-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .boton-home {
+            background-color: var(--azulMarino);
+            color: var(--blanco);
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            border: 3px solid var(--blanco);
+            transition: .4s all;
+            font-family: "SUSE", sans-serif;
+            text-decoration: none;
+        }
+
+        .boton-home:hover {
+            background-color: var(--blanco);
+            color: var(--azulMarino);
+        }
     </style>
 </head>
 <body>
@@ -53,6 +83,8 @@
         </nav>
     </div>
 
-    
+    <div class="contenedor-btn">
+        <a class="boton-home" href="../index.html">Volver al portafolio</a>
+    </div>
 </body>
 </html>

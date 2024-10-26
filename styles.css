@@ -133,3 +133,15 @@ a {
     padding: 20px 50px;
     border-radius: 12px;
 }
+
+.boton-home {
+    background-color: var(--azulMarino);
+    color: var(--blanco);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    border: 3px solid var(--blanco);
+    transition: .4s all;
+}
